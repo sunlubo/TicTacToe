@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44CBB651E4D6C75002192F7 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBB641E4D6C75002192F7 /* Presenter.swift */; };
+		A44CBB671E4D6D2C002192F7 /* TicTacToePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBB661E4D6D2C002192F7 /* TicTacToePresenter.swift */; };
+		A44CBB691E4D6D55002192F7 /* TicTacToeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44CBB681E4D6D55002192F7 /* TicTacToeView.swift */; };
 		A48A8E0B1E4C3F1700ADA0E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A8E0A1E4C3F1700ADA0E0 /* AppDelegate.swift */; };
 		A48A8E0D1E4C3F1700ADA0E0 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48A8E0C1E4C3F1700ADA0E0 /* TicTacToeViewController.swift */; };
 		A48A8E101E4C3F1800ADA0E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48A8E0E1E4C3F1800ADA0E0 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A44CBB641E4D6C75002192F7 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A44CBB661E4D6D2C002192F7 /* TicTacToePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToePresenter.swift; sourceTree = "<group>"; };
+		A44CBB681E4D6D55002192F7 /* TicTacToeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicTacToeView.swift; sourceTree = "<group>"; };
 		A48A8E071E4C3F1700ADA0E0 /* TiCTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiCTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48A8E0A1E4C3F1700ADA0E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48A8E0C1E4C3F1700ADA0E0 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44CBB621E4D6C4F002192F7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A44CBB641E4D6C75002192F7 /* Presenter.swift */,
+				A44CBB661E4D6D2C002192F7 /* TicTacToePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		A44CBB631E4D6C57002192F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A48A8E0C1E4C3F1700ADA0E0 /* TicTacToeViewController.swift */,
+				A44CBB681E4D6D55002192F7 /* TicTacToeView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		A48A8DFE1E4C3F1700ADA0E0 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +84,8 @@
 		A48A8E091E4C3F1700ADA0E0 /* TiCTacToe */ = {
 			isa = PBXGroup;
 			children = (
-				A48A8E1D1E4C4AD900ADA0E0 /* Controller */,
+				A44CBB631E4D6C57002192F7 /* View */,
+				A44CBB621E4D6C4F002192F7 /* Presenter */,
 				A48A8E1C1E4C4AC900ADA0E0 /* Model */,
 				A48A8E0A1E4C3F1700ADA0E0 /* AppDelegate.swift */,
 				A48A8E0E1E4C3F1800ADA0E0 /* Main.storyboard */,
@@ -79,14 +104,6 @@
 				A48A8E221E4C4B6900ADA0E0 /* Board.swift */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		A48A8E1D1E4C4AD900ADA0E0 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				A48A8E0C1E4C3F1700ADA0E0 /* TicTacToeViewController.swift */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44CBB651E4D6C75002192F7 /* Presenter.swift in Sources */,
+				A44CBB691E4D6D55002192F7 /* TicTacToeView.swift in Sources */,
+				A44CBB671E4D6D2C002192F7 /* TicTacToePresenter.swift in Sources */,
 				A48A8E211E4C4B6200ADA0E0 /* Player.swift in Sources */,
 				A48A8E0D1E4C3F1700ADA0E0 /* TicTacToeViewController.swift in Sources */,
 				A48A8E231E4C4B6900ADA0E0 /* Board.swift in Sources */,

@@ -23,41 +23,76 @@ final class TicTacToeViewController: UIViewController {
     
     var cellButtons = [UIButton]()
     
-    var model = Board()
+    lazy var presenter: TicTacToePresenter = {
+        return TicTacToePresenter(view: self)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cellButtons.append(contentsOf: [button1, button2, button3, button4, button5, button6, button7, button8, button9])
         
-        reset()
+        resetButtonClicked()
+        
+        presenter.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        presenter.viewWillAppear()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.viewDidAppear()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        presenter.viewWillDisappear()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        presenter.viewDidDisappear()
     }
     
     // When the view tells us a cell is clicked in the tic tac toe board, this method will fire.
     // We update the model and then interrogate it's state to decide how to proceed.
     // If X or O won with this move, update the view to display this and otherwise mark the cell that was clicked.
-    @IBAction func buttonClicked(button: UIButton) {
+    @IBAction func cellsClicked(button: UIButton) {
         let tag = button.tag.description
-        let row = Int(tag.substring(to: tag.index(tag.startIndex, offsetBy: 1)))!
-        let col = tag.characters.count == 1 ? 0 : Int(tag.substring(with: tag.index(tag.startIndex, offsetBy: 1)..<tag.endIndex))!
+        let row = Int(tag.substring(to: tag.index(tag.startIndex, offsetBy: 1)))! - 1
+        let col = Int(tag.substring(with: tag.index(tag.startIndex, offsetBy: 1)..<tag.endIndex))! - 1
         
-        if let player = model.mark(row: row, col: col) {
-            button.setTitle(player.rawValue, for: .normal)
-            
-            if model.winner != nil {
-                winnerPlayerLabel.text = player.rawValue
-                winnerPlayerView.isHidden = false
-            }
-        }
+        presenter.cellsClicked(row: row, col: col)
     }
     
     // On reset, we clear the winner label and hide it, then clear out each button. We also tell the model to reset (restart) it's state.
-    @IBAction func reset() {
-        model.restart()
-        
-        cellButtons.forEach({ $0.setTitle(nil, for: .normal) })
-        
+    @IBAction func resetButtonClicked() {
+        presenter.resetButtonClicked()
+    }
+}
+
+// MARK: - TicTacToeView
+extension TicTacToeViewController: TicTacToeView {
+    
+    func showWinner(_ winner: String) {
+        winnerPlayerLabel.text = winner
+        winnerPlayerView.isHidden = false
+    }
+    
+    func clearWinnerDisplay() {
         winnerPlayerLabel.text = nil
         winnerPlayerView.isHidden = true
+    }
+    
+    func clearButtons() {
+        cellButtons.forEach({ $0.setTitle(nil, for: .normal) })
+    }
+    
+    func setButtonText(_ row: Int, _ col: Int, _ text: String) {
+        let button = cellButtons.filter({ $0.tag == Int("\(row + 1)\(col + 1)")! }).first!
+        button.setTitle(text, for: .normal)
     }
 }

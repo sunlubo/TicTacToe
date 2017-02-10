@@ -27,7 +27,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xSB-iU-LoD">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="61.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXt-5O-Xgw">
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXt-5O-Xgw">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -35,10 +35,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AK-sa-9Xm"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lb5-gY-x0M"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpo-Yy-zJ4">
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpo-Yy-zJ4">
                                                 <rect key="frame" x="69.5" y="0.0" width="61" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -46,10 +46,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1uX-jw-yZB"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7u-lK-sce"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-MA-J57">
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXs-MA-J57">
                                                 <rect key="frame" x="138.5" y="0.0" width="61.5" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -57,7 +57,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wY7-tV-DTg"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0i-ot-dvG"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -65,7 +65,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="emH-px-fxK">
                                         <rect key="frame" x="0.0" y="69.5" width="200" height="61"/>
                                         <subviews>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-gO-uEg">
+                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-gO-uEg">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -73,10 +73,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDr-fr-7WE"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eR8-aF-elI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-8m-f95">
+                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIr-8m-f95">
                                                 <rect key="frame" x="69.5" y="0.0" width="61" height="61"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -84,10 +84,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ovy-m1-hmk"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZs-mf-OGA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krg-q7-01j">
+                                            <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krg-q7-01j">
                                                 <rect key="frame" x="138.5" y="0.0" width="61.5" height="61"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -95,7 +95,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YDg-tK-zbj"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzZ-VH-uJ2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -103,7 +103,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EDm-0R-X9N">
                                         <rect key="frame" x="0.0" y="138.5" width="200" height="61.5"/>
                                         <subviews>
-                                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-4i-0Oo">
+                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qC7-4i-0Oo">
                                                 <rect key="frame" x="0.0" y="0.0" width="61.5" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -111,10 +111,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K7r-zt-4qu"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68r-re-TVv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTl-Gf-qry">
+                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTl-Gf-qry">
                                                 <rect key="frame" x="69.5" y="0.0" width="61" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -122,10 +122,10 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxX-wG-6u3"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUA-EC-tIQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-x2-DKv">
+                                            <button opaque="NO" tag="33" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-x2-DKv">
                                                 <rect key="frame" x="138.5" y="0.0" width="61.5" height="61.5"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -133,7 +133,7 @@
                                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="buttonClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ynb-9R-15s"/>
+                                                    <action selector="cellsClickedWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G3t-2u-PjS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -174,7 +174,7 @@
                                 <rect key="frame" x="164" y="573" width="46" height="30"/>
                                 <state key="normal" title="RESET"/>
                                 <connections>
-                                    <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="K82-PE-Z5P"/>
+                                    <action selector="resetButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="vra-mB-W3h"/>
                                 </connections>
                             </button>
                         </subviews>
