@@ -57,9 +57,6 @@ final class TicTacToeViewController: UIViewController {
         presenter.viewDidDisappear()
     }
     
-    // When the view tells us a cell is clicked in the tic tac toe board, this method will fire.
-    // We update the model and then interrogate it's state to decide how to proceed.
-    // If X or O won with this move, update the view to display this and otherwise mark the cell that was clicked.
     @IBAction func cellsClicked(button: UIButton) {
         let tag = button.tag.description
         let row = Int(tag.substring(to: tag.index(tag.startIndex, offsetBy: 1)))! - 1
@@ -68,7 +65,6 @@ final class TicTacToeViewController: UIViewController {
         presenter.cellsClicked(row: row, col: col)
     }
     
-    // On reset, we clear the winner label and hide it, then clear out each button. We also tell the model to reset (restart) it's state.
     @IBAction func resetButtonClicked() {
         presenter.resetButtonClicked()
     }
